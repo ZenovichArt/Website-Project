@@ -1,0 +1,13 @@
+.textAbout {
+    font-size: 18px;
+    font-family: "Courier New";
+    color: #22223b;
+    background: #f2e9e4;
+    padding: 35px;
+    transition: all 0.8s ease;
+}
+
+.textAbout:hover {
+    color: #f2e9e4;
+    background: #4a4e69;
+}

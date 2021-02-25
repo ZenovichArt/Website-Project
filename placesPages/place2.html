@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/stylesContacts.css">
+<link rel="stylesheet" href="../css/stylesPlace.css">
+<script type="text/javascript" src="../js/app.js"></script>
+<script type="text/javascript" src="../js/appPlace.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ИнвестАренда - аренда помещений, офисов в Тольятти (Тлт)">
+    <title>ИнвестАренда</title>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+
+<body>
+<div class="headerFlex" id="StickyHeaderFlex">
+    <h1>Инвест-Аренда</h1>
+    <div class="headerFlexVertical">
+        <div><span class="iconify" data-icon="ic:baseline-search" data-inline="false"></span></div>
+        <div class="dropdown">
+            <button class="iconify dropbtn" data-icon="uim:list-ul" data-inline="false"></button>
+            <div class="dropdown-content">
+                <a class="navButton" href="../index.html">Выбор помещений</a>
+                <a class="navButton" href="../informationPages/about.html">Информация о нас</a>
+                <a class="navButton" href="../informationPages/contacts.html">Контакты для связи</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+
+    <h1 class="subheader">Свободное назначение, 150 м²</h1>
+
+    <h2 class="location">Самарская область, Тольятти, р-н Автозаводский, Южное ш., 22</h2>
+
+    <div class="row">
+        <div class="column">
+            <img src="../Images/placeImages/5.jpeg" alt="Снимок 1" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="../Images/placeImages/6.jpeg" alt="Снимок 2" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="../Images/placeImages/7.jpg" alt="Снимок 3" style="width:100%" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+    </div>
+
+    <p class="placeInfo">
+        Первая линия Южного шоссе. 6-ти этажное офисное здание с одноэтажным зданием столовой (бывшее ТП ПАТП-1. Постамент "Жёлтый автобус"). Помещения 1 этажа имеют свободную планировку, возможно размещение торговых и производственных площадей, сферы услуг (медицинские, выставочные и др.). В помещениях 2-6 этажей сдаются в аренду офисы. Хорошее состояние помещений для организации бизнеса.  Обеспечены всей необходимой инженерной и телекоммуникационной инфраструктурой. Парковки более чем на 80 машиномест.
+    </p>
+
+
+    <div class="conditionsInfoRow">
+        <div class="conditionsInfoColumn1">
+            <ul class="conditionsInfoText1">
+                <li>Цена</li>
+                <li>Ставка</li>
+                <li>Комунальные платежи</li>
+                <li>Эксплуатационные расходы</li>
+            </ul>
+        </div>
+        <div class="conditionsInfoColumn2">
+            <div class="conditionsInfoText2">
+                <div>37 500 руб/месяц</div>
+                <div>3 000 за кв.м/год</div>
+                <div>Включены</div>
+                <div>Не включены</div>
+            </div>
+        </div>
+        <div class="conditionsInfoColumn1">
+            <ul class="conditionsInfoText1">
+                <li>Тип аренды</li>
+                <li>Срок аренды</li>
+                <li>Минимальный срок аренды</li>
+                <li>Арендные каникулы</li>
+            </ul>
+        </div>
+        <div class="conditionsInfoColumn2">
+            <div class="conditionsInfoText2">
+                <div>Субаренда</div>
+                <div>Длительный</div>
+                <div>11 мес.</div>
+                <div>-</div>
+            </div>
+        </div>
+    </div>
+
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe1UmPL1SJf0e_ATDF-CFYgLfDiU1UFuo&callback=initMap&libraries=&v=weekly"
+            async
+    ></script>
+
+    <hr>
+
+    <footer class="footerStyle">
+        <p>Все права зарегистрированы. Контактный телефон: +7(392)234-13-46. </p>
+    </footer>
+</div>
+</body>
+</html>

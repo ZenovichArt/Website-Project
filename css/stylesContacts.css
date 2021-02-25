@@ -1,0 +1,34 @@
+.ContactsFlexMain {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 225px;
+    padding-bottom: 225px;
+}
+
+.ContactsFlexSub {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all 0.8s ease;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.ContactsFlexSub:hover {
+    color: #f2e9e4;
+    background: #4a4e69;
+}
+
+.ContactsFlexSubDivision {
+    font-size: 25px;
+}
+
+.ContactsFlexSubNumber {
+    font-size: 20px;
+    transition: all 0.8s ease;
+}
+
+.ContactsFlexSubNumber:hover {
+    color: #f2e9e4;
+}
